@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Cadastro de Usuário</title>
+</head>
+<body>
+
+    <div id="container">
+        <div class="table">
+            <div class="title">
+                <h1>Cadastro de Usuário</h1>
+            </div>
+            <label>Usuário:</label>
+            <input id="userCadastro" placeholder="Escreva seu Nome de Usuário" style="text-align: center;">
+            <label>Email:</label>
+            <input id='emailCadastro' type="email" placeholder="Escreva seu Email" style="text-align: center;">
+            <label>Senha:</label>
+            <div style="position: relative;">
+                <input id="senhaCadastro" type='password' placeholder="Escreva sua Senha" style="text-align: center;">
+                <span id="showPasswordCadastro" class="toggle-password" style="position: absolute; top: 50%; right: 5px; transform: translateY(-50%); cursor: pointer;" onclick="togglePasswordCadastro()">👁️</span>
+            </div>
+            
+            <div class="buttonCadastro">
+                <button id="logCadastro" onclick="cadastrarUser()">Cadastrar Usuário</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+
+</body>
+</html>
